@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Air Quality Monitoring System</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background: #f4f4f4;
+        }
+
+        /* Navbar */
+        header {
+            background: #0a3d62;
+            color: #fff;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            font-size: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                        url('https://images.unsplash.com/photo-1569163139394-de4e4f43e4e3') center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        /* Sections */
+        .section {
+            padding: 50px 10%;
+            background: white;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+
+        .section h2 {
+            margin-bottom: 15px;
+            color: #0a3d62;
+        }
+
+        .section ul, .section ol {
+            margin-left: 20px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #0a3d62;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            .hero h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <h1>IoT Air Quality System</h1>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#problem">Problem</a></li>
+            <li><a href="#objectives">Objectives</a></li>
+            <li><a href="#solution">Solution</a></li>
+            <li><a href="#methodology">Methodology</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#future">Future Scope</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#references">References</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>IoT-Based Air Quality Monitoring & Pollution Control System</h2>
+    <p>“When the air we breathe becomes a threat, innovation becomes our responsibility.”</p>
+</section>
+
+<section id="intro" class="section">
+    <h2>Introduction</h2>
+    <p>
+        Air pollution is one of the most serious global environmental challenges. 
+        Traditional systems are expensive and lack real-time monitoring. 
+        This project uses IoT technology for continuous, low-cost monitoring with automatic control.
+    </p>
+</section>
+
+<section id="problem" class="section">
+    <h2>Problem Statement</h2>
+    <p>
+        Existing systems are expensive, stationary, and provide delayed data. 
+        There is a need for affordable, real-time monitoring with automatic pollution control.
+    </p>
+</section>
+
+<section id="objectives" class="section">
+    <h2>Objectives</h2>
+    <ul>
+        <li>Low-cost IoT system</li>
+        <li>Real-time monitoring</li>
+        <li>Multi-pollutant detection</li>
+        <li>Automatic control</li>
+        <li>Cloud integration</li>
+    </ul>
+</section>
+
+<section id="solution" class="section">
+    <h2>Proposed Solution</h2>
+    <p>
+        Uses ESP32, sensors, and cloud platforms to monitor pollutants and trigger fans/purifiers automatically.
+    </p>
+</section>
+
+<section id="methodology" class="section">
+    <h2>Methodology</h2>
+    <ol>
+        <li>Sensor Data Collection</li>
+        <li>Processing via ESP32</li>
+        <li>Cloud Transmission</li>
+        <li>Real-time Monitoring</li>
+        <li>Automatic Control</li>
+    </ol>
+</section>
+
+<section id="results" class="section">
+    <h2>Results</h2>
+    <p>
+        System successfully detects pollution levels, displays real-time data, and activates control systems when needed.
+    </p>
+</section>
+
+<section id="future" class="section">
+    <h2>Future Scope</h2>
+    <ul>
+        <li>AI-based prediction</li>
+        <li>Smart city expansion</li>
+        <li>Solar-powered units</li>
+        <li>Mobile alerts</li>
+    </ul>
+</section>
+
+<section id="team" class="section">
+    <h2>Team</h2>
+    <ul>
+        <li>Adishree Amol Bagul</li>
+        <li>Sonal Raju Ingole</li>
+    </ul>
+    <p>Guide: Dr. P. J. Mondhe</p>
+</section>
+
+<section id="references" class="section">
+    <h2>References</h2>
+    <ul>
+        <li>ThingSpeak, Blynk</li>
+        <li>Arduino IDE</li>
+        <li>Sensor Datasheets</li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2026 IoT Air Quality Monitoring Project</p>
+</footer>
+
+</body>
+</html>

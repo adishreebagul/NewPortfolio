@@ -31,7 +31,12 @@ nav ul li a{
     transition:0.3s;
 }
 nav ul li a:hover{color:#f6b93b;}
-
+.menu-toggle{
+    display:none;
+    font-size:26px;
+    color:white;
+    cursor:pointer;
+}
 .hero{
     height:90vh;
     background:
@@ -93,10 +98,37 @@ footer{
 }
 
 @media(max-width:768px){
-    nav{flex-direction:column;}
-    nav ul{flex-direction:column; margin-top:10px;}
-    nav ul li{margin:5px 0;}
-    .hero h2{font-size:28px;}
+
+    nav{
+        flex-direction:row;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    #nav-links{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        background:#0a3d62;
+        position:absolute;
+        top:60px;
+        left:0;
+    }
+
+    #nav-links.active{
+        display:flex;
+    }
+
+    #nav-links li{
+        text-align:center;
+        padding:10px;
+    }
+
+    .hero h2{
+        font-size:28px;
+    }
 }
 </style>
 </head>
@@ -105,13 +137,17 @@ footer{
 
 <header>
 <nav>
-<h1>🌍 IoT Air Quality Monitoring and Pollution Control</h1>
-<ul>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<h1>🌍 IoT Air Quality</h1>
+
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<ul id="nav-links">
 <li><a href="#intro">Intro</a></li>
 <li><a href="#problem">Problem</a></li>
 <li><a href="#solution">Solution</a></li>
 <li><a href="#methodology">Methodology</a></li>
-<li><a href="#gallery">Results Gallery</a></li>
+<li><a href="#gallery">Results</a></li>
 <li><a href="#team">Team</a></li>
 </ul>
 </nav>
@@ -316,3 +352,8 @@ Once the air quality returns to safe levels, the system automatically turns OFF 
 
 </body>
 </html>
+<script>
+function toggleMenu(){
+    document.getElementById("nav-links").classList.toggle("active");
+}
+</script>
